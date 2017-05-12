@@ -1,5 +1,4 @@
 /*
-
   PROJECT TITLE: Self-Balancing robot using ATMega32 microcontroller
   Hardware used: ATMega32 microcontroller, MPU6050 gyroscope+accelerometer sensor, wires, 2 DC Motors, a platform for the robot, wheels
                  (PID Controller may be used for better stability)
@@ -7,12 +6,12 @@
   Code reference for sensor: http://www.electronicwings.com/sensors-modules/mpu6050-gyroscope-accelerometer-temperature-sensor-module
 */
 
-#define F_CPU 8000000UL									/* Define CPU clock Frequency e.g. here its 8MHz */
-#include <avr/io.h>										/* Include AVR std. library file */
-#include <util/delay.h>									/* Include delay header file */
-#include <inttypes.h>									/* Include integer type header file */
-#include <stdlib.h>										/* Include standard library file */
-#include <stdio.h>						/* Include USART header file */
+#define F_CPU 8000000UL	/* Define CPU clock Frequency e.g. here its 8MHz */
+#include <avr/io.h>	/* Include AVR std. library file */
+#include <util/delay.h>	/* Include delay header file */
+#include <inttypes.h>	/* Include integer type header file */
+#include <stdlib.h>	/* Include standard library file */
+#include <stdio.h>	/* Include USART header file */
 
 #define I2C_TIMER_DELAY 0xFF
 #define SCL_CLOCK  400000L
